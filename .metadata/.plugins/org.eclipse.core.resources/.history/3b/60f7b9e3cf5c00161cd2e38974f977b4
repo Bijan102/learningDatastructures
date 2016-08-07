@@ -1,0 +1,14 @@
+package ds.stack;
+
+public class App {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Stack theStack = new Stack(10);
+		theStack.push(20);
+		theStack.push(20);
+		theStack.push(20);
+		theStack.push(20);
+	}
+
+}
