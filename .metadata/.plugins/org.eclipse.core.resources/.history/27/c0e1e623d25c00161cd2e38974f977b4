@@ -5,7 +5,7 @@ public class App {
 	public static void main(String[] args) {
 		
 		//Declare and initialize a Stack called theStack of size 10
-		Stack theStack = new Stack(3);
+		Stack theStack = new Stack(10);
 		
 		//Push values to the stack, 20, 40, 60, 80
 		theStack.push(20);

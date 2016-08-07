@@ -23,13 +23,16 @@ public class Stack {
 	 * push - Pushes an element onto the stack when called
 	 * 
 	 * @param j - A long type that is to be pushed onto the stack
+	 * @throws Exception 
 	 * 
 	 */
 	public void push(long j) {
-		if (isFull()) System.out.println("This stack is already full.");
-		else {
+		//if (isFull()) throw new Exception("This stack is already full");
+		try {
 			top++;
 			stackArray[top] = j;
+		} catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println("The stack is already full: ");
 		}
 	}
 	
@@ -40,14 +43,9 @@ public class Stack {
 	 * @return stackArray[old_top] - The most recent element that the top pointer was at.
 	 */
 	public long pop() {
-		if (isEmpty()) {
-			System.out.println("The stack is already empty.");
-			return -1;
-		} else {
-			int old_top = top;
-			top--;
-			return stackArray[old_top];
-		}
+		int old_top = top;
+		top--;
+		return stackArray[old_top];
 	}
 	
 	
