@@ -4,6 +4,10 @@ package ds.stack;
  * @author bijanfazeli
  *
  */
+/**
+ * @author bijanfazeli
+ *
+ */
 public class Stack {
 	
 	//Private variables to keep track of the maxSize and the top of the stack

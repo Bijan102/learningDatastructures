@@ -56,18 +56,12 @@ public class Stack {
 	/**
 	 * isEmpty - Checks to see if the stack is empty or not
 	 * 
-	 * @return Evaluation of top == -1
+	 * @return True/False
 	 */
 	public boolean isEmpty() {
 		return top == -1;
 	}
 	
-	
-	/**
-	 * isFull - Checks to see if the current stack is full by comparing positions
-	 * 
-	 * @return Evaluation of maxSize - 1 == top
-	 */
 	public boolean isFull() {
 		return maxSize-1 == top;
 	}
