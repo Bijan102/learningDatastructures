@@ -279,3 +279,28 @@ Caused by: org.eclipse.jgit.errors.RemoteRepositoryException: git://github.com/B
 	at org.eclipse.jgit.transport.Transport.push(Transport.java:1200)
 	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:157)
 	... 4 more
+
+!ENTRY org.eclipse.egit.core 4 0 2016-08-07 10:23:13.418
+!MESSAGE An exception occurred during push on URI git://github.com/Bijan102/learningDatastructures.git: git://github.com/Bijan102/learningDatastructures.git: 
+  You can't push to git://github.com/Bijan102/learningDatastructures.git
+  Use https://github.com/Bijan102/learningDatastructures.git
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: git://github.com/Bijan102/learningDatastructures.git: 
+  You can't push to git://github.com/Bijan102/learningDatastructures.git
+  Use https://github.com/Bijan102/learningDatastructures.git
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:164)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:228)
+	at org.eclipse.egit.ui.internal.push.PushOperationUI.execute(PushOperationUI.java:167)
+	at org.eclipse.egit.ui.internal.push.PushOperationUI$1.run(PushOperationUI.java:229)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.RemoteRepositoryException: git://github.com/Bijan102/learningDatastructures.git: 
+  You can't push to git://github.com/Bijan102/learningDatastructures.git
+  Use https://github.com/Bijan102/learningDatastructures.git
+	at org.eclipse.jgit.transport.BasePackConnection.readAdvertisedRefsImpl(BasePackConnection.java:209)
+	at org.eclipse.jgit.transport.BasePackConnection.readAdvertisedRefs(BasePackConnection.java:178)
+	at org.eclipse.jgit.transport.TransportGitAnon$TcpPushConnection.<init>(TransportGitAnon.java:233)
+	at org.eclipse.jgit.transport.TransportGitAnon.openPush(TransportGitAnon.java:125)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:154)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1200)
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:157)
+	... 4 more
