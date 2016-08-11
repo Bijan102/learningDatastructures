@@ -1,0 +1,39 @@
+package ds.stack;
+
+public class App {
+
+	//Declare and initialize a Stack called theStack of size 10
+	static Stack theStack;
+	
+	public static void main(String[] args) {
+		
+		//Push values to the stack, 20, 40, 60, 80
+//		theStack.push(20);
+//		theStack.push(40);
+//		theStack.push(60);
+//		theStack.push(80);
+		
+		System.out.println(reverseString("Hello"));
+		
+//		//Create a while to pop elements off the stack so long as the stack is not empty
+//		while(!theStack.isEmpty()){
+//			//Print the values popped off the stack to the console
+//			System.out.println(theStack.pop());
+//		}
+	}
+	
+	public static String reverseString(String str) {
+		String container = "";
+		theStack = new Stack(str.length());
+		
+		for(int i = 0, max = str.length(); i < max; i++)
+		{
+			theStack.push(str.charAt(i));
+		}
+		
+		while(!theStack.isEmpty()) container = String.valueOf(theStack.pop());
+		
+		return container;
+	}
+
+}

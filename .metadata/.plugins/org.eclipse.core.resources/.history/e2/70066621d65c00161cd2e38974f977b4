@@ -9,12 +9,12 @@ public class Stack {
 	//Private variables to keep track of the maxSize and the top of the stack
 	private int maxSize, top;
 	//Declared an array that will be used as a stack once it's assigned an array 
-	private char[] stackArray;
+	private long[] stackArray;
 	
 	//Constructor for creating a stack
 	public Stack(int size) {
 		this.maxSize = size;
-		this.stackArray = new char [maxSize];
+		this.stackArray = new long [maxSize];
 		this.top = -1;
 	}
 	
@@ -25,7 +25,7 @@ public class Stack {
 	 * @param j - A long type that is to be pushed onto the stack
 	 * 
 	 */
-	public void push(char j) {
+	public void push(long j) {
 		if (isFull()) System.out.println("This stack is already full.");
 		else {
 			top++;
@@ -39,10 +39,10 @@ public class Stack {
 	 * 
 	 * @return stackArray[old_top] - The most recent element that the top pointer was at.
 	 */
-	public char pop() {
+	public long pop() {
 		if (isEmpty()) {
 			System.out.println("The stack is already empty.");
-			return '0';
+			return -1;
 		} else {
 			int old_top = top;
 			top--;
@@ -56,7 +56,7 @@ public class Stack {
 	 * 
 	 * @return stackArray[top] - The top most element on the stack
 	 */
-	public char peak(){
+	public long peak(){
 		return stackArray[top];
 	}
 	
