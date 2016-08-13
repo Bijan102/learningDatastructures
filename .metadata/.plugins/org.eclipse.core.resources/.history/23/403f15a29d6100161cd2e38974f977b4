@@ -18,7 +18,7 @@ public class SinglyLinkedList {
 	 * insert	-	Creates a new node that will be added as the first node in the linkedList 
 	 * 				with the given data.
 	 * 
-	 * @param data	-	The data to be stored in a newly created Node in the linked list.
+	 * @param data	-	The data to be stored in a newly created Node in the linkedlist.
 	 */
 	public void insertFirst(int data) {
 		Node newNode = new Node();
@@ -60,14 +60,8 @@ public class SinglyLinkedList {
 		System.out.println();
 	}
 	
-	/**
-	 * insertLast	-	Creates a new node that will be added to the last node in the linkedList 
-	 * 					with the given data.
-	 * 
-	 * @param data	-	The data to be stored in a newly created Node in the linked list.
-	 */
 	public void insertLast(int data) {
-//		Node current = last;
+//		Node current = first;
 		
 //		while(current.next != null) {
 //			current = current.next; //Loop until current.next is null
@@ -76,10 +70,6 @@ public class SinglyLinkedList {
 		Node newNode = new Node();
 		newNode.data = data;
 //		current.next = newNode;
-//		last = newNode;
-		if (first == null) {
-			last = newNode;
-			first = last;
-		} else last.next = newNode;
+		last.next = newNode;
 	}
 }

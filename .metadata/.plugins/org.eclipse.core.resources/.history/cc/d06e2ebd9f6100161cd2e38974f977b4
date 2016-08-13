@@ -18,7 +18,7 @@ public class SinglyLinkedList {
 	 * insert	-	Creates a new node that will be added as the first node in the linkedList 
 	 * 				with the given data.
 	 * 
-	 * @param data	-	The data to be stored in a newly created Node in the linked list.
+	 * @param data	-	The data to be stored in a newly created Node in the linkedlist.
 	 */
 	public void insertFirst(int data) {
 		Node newNode = new Node();
