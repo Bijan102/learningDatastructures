@@ -46,7 +46,6 @@ public class DoublyLinkedList {
 		return temp;			//Return the deleted old first node
 	}
 	
-	//Assume non-empty list
 	public Node deleteLast() {
 		Node temp = last;
 		if(first.next == null) first = null;	//Only one node in the list
@@ -56,7 +55,6 @@ public class DoublyLinkedList {
 		return temp;
 	}
 	
-	//Assume non-empty list
 	public boolean insertAfter(int key, int data) {
 		Node current = first;		//Start from the beginning of the list
 		//As long as the key is not found in the list
@@ -79,10 +77,5 @@ public class DoublyLinkedList {
 		current.next = newNode;
 		
 		return true;
-	}
-	
-	//Assume non-empty list
-	public Node deleteKey(int key) {
-		
 	}
 }

@@ -82,7 +82,7 @@ public class DoublyLinkedList {
 	}
 	
 	//Assume non-empty list
-	public Node deleteKey(int key) {
+	public Node deleteLast() {
 		
 	}
 }
