@@ -3,29 +3,15 @@ package ds.doublylinkedlist;
 public class DoublyLinkedList {
 	private Node first, last;
 	
-	/**
-	 * DoublyLinkedList Constructor - Initializes the fields of the DoublyLinkedList obj 
-	 * 								  when instantiated.
-	 * 
-	 */
 	public DoublyLinkedList() {
 		this.first = null;
 		this.last = null;
 	}
-	/**
-	 * isEmpty	-	Checks to see if the current list is empty
-	 * @return	- 	Returns the eval of first == null
-	 */
+	
 	private boolean isEmpty() {
 		return first == null;
 	}
 	
-	/**
-	 * insertFirst	-	Creates a new node that will be added as the first node in the linkedList 
-	 * 				with the given data.
-	 * 
-	 * @param data	-	The data to be stored in a newly created Node in the linked list.
-	 */
 	public void insertFirst(int data) {
 		Node newNode = new Node();
 		newNode.data = data;
@@ -37,12 +23,6 @@ public class DoublyLinkedList {
 		this.first = newNode;
 	}
 	
-	/**
-	 * insertLast	-	Creates a new node that will be added as the last node in the linkedList 
-	 * 					with the given data.
-	 * 
-	 * @param data	-	The data to be stored in a newly created Node in the linked list.
-	 */
 	public void insertLast(int data) {
 		Node newNode = new Node();
 		newNode.data = data;
@@ -57,11 +37,6 @@ public class DoublyLinkedList {
 	}
 	
 	//Assume non-empty list
-	/**
-	 * deleteFirst	-	Removes the first node from the list
-	 * 
-	 * @return		-	The node that will be removed
-	 */
 	public Node deleteFirst() {
 		Node temp = first;
 		if(first.next == null) last = null;		//There is only one item in the list
@@ -108,9 +83,6 @@ public class DoublyLinkedList {
 	
 	//Assume non-empty list
 	public Node deleteKey(int key) {
-		Node current = first;
-		
-		while(current.data != key) {current = current.next;}
 		
 	}
 }

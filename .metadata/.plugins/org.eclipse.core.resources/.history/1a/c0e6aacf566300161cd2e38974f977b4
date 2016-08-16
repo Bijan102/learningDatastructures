@@ -57,11 +57,6 @@ public class DoublyLinkedList {
 	}
 	
 	//Assume non-empty list
-	/**
-	 * deleteFirst	-	Removes the first node from the list
-	 * 
-	 * @return		-	The node that will be removed
-	 */
 	public Node deleteFirst() {
 		Node temp = first;
 		if(first.next == null) last = null;		//There is only one item in the list
