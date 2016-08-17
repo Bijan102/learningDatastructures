@@ -150,7 +150,7 @@ public class DoublyLinkedList {
 	 *  
 	 */
 	public void displayForward() {
-		System.out.print("List (first --> last): ");
+		System.out.println("List (first --> last): ");
 		Node current = first;	//Start from the beginning
 		while(current != null) {
 			current.display();

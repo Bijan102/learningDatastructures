@@ -1,0 +1,34 @@
+package ds.doublylinkedlist;
+
+public class App {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		DoublyLinkedList list = new DoublyLinkedList();
+		
+		list.insertFirst(22);
+		list.insertFirst(42);
+		list.insertFirst(62);
+		
+		list.insertLast(82);
+		list.insertLast(102);
+		list.insertLast(122);
+		
+		list.displayForward();
+		list.displayBackward();
+		
+		list.deleteFirst();
+		list.deleteLast();
+		
+		list.deleteKey(82);
+		
+		list.displayForward();
+		list.displayBackward();
+		
+		list.insertAfter(62, 72);
+		list.insertAfter(102, 112);
+		
+		list.displayForward();
+	}
+
+}
